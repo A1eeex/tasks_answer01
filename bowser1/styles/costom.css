@@ -1,0 +1,13 @@
+.wrapColumns {
+    display: flex;
+    max-width: 300px;
+}
+
+.evenNumbersWrap{
+    width: 50%;
+    background-color: red;
+}
+.oddNumbersWrap{
+    width: 50%;
+    background-color: #8d9be1;
+}
