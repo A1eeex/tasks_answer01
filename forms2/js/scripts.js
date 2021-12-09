@@ -1,6 +1,5 @@
 const addFormBooks = document.querySelector('.add_form_books')
 const bookList = document.querySelector('.book_list')
-const bookTitle = document.querySelector('.book_title')
 
 const books = JSON.parse(localStorage.getItem('books')) || []
 
@@ -8,7 +7,6 @@ addFormBooks.addEventListener('submit', addBook)
 
 function addBook(e) {
     e.preventDefault()
-    valid(bookTitle,  3)
     const titleBook = e.target.book_title.value
     const author = e.target.author.value
     const priority = e.target.priority.value
@@ -25,12 +23,6 @@ function addBook(e) {
     showBooks(books, bookList)
     this.reset() //clear inp
     console.log(books)
-}
-
-function valid(selector, minNum) {
-    if (selector.length < minNum) {
-        console.log('wwdw')
-    }
 }
 
 function showBooks(arr, list) {
