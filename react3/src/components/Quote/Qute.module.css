@@ -1,0 +1,38 @@
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    height: auto;
+}
+.wrapper{
+    margin-top: 5em;
+}
+.randomBtn{
+    background-color: #e59607;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border: none;
+}
+.randomBtn:hover{
+    background-color: #c58104;
+    color: #FFFFFF;
+}
+.currentQuote{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.prevQuote{
+    background-color: #da004c;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+.prevQuote:hover{
+    background-color: #b7003f;
+}
