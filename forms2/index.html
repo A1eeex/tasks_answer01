@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="styles/Skeleton/skeleton.css"/>
 
     <link rel="stylesheet" href="styles/costom.css"/>
-    <script src="js/scripts.js" async></script>
+    <script src="js/scripts.js" defer></script>
     <title>Forms2</title>
 </head>
 <body>
 <div class="container">
     <form class="add_form_books">
-        <input value="book_title" name="book_title" placeholder="Book title..." type="text">
-        <input value="author" name="author" placeholder="Author..." type="text">
-        <input name="priority" placeholder="Priority of reading (1-5)" type="number">
+        <input required minlength="1" class="book_title" name="book_title" placeholder="Book title..." type="text"  >
+        <input required minlength="3" name="author" placeholder="Author..." type="text">
+        <input required maxlength="1" pattern="[1-5]" name="priority" placeholder="Priority of reading (1-5)" type="text">
         <div>
             <span>Categories (choose one): </span>
-            <select name="categories" class="select_categories">
+            <select required name="categories" class="select_categories">
                 <option value="History">History</option>
-                <option selected value="Cooking">Cooking</option>
+                <option value="Cooking">Cooking</option>
                 <option value="Sports">Sports</option>
             </select>
         </div>
