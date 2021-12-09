@@ -1,0 +1,21 @@
+.container {
+    max-width: 1170px;
+    margin: auto;
+    height: auto;
+}
+
+.add_form_books {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.select_categories{
+    width: 100%;
+}
+.submit_btn {
+    background-color: rgba(116, 227, 0, 0.6);
+}
+
+.submit_btn:hover {
+    background-color: rgba(116, 227, 0, 0.91);
+}
